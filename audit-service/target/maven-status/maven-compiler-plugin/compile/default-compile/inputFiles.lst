@@ -1,0 +1,6 @@
+/mnt/d/Projects/sop/audit-service/src/main/java/edu/rutmiit/demo/auditservice/AuditServiceApplication.java
+/mnt/d/Projects/sop/audit-service/src/main/java/edu/rutmiit/demo/auditservice/config/RabbitMQConfig.java
+/mnt/d/Projects/sop/audit-service/src/main/java/edu/rutmiit/demo/auditservice/controller/AuditController.java
+/mnt/d/Projects/sop/audit-service/src/main/java/edu/rutmiit/demo/auditservice/listener/AuditEventListener.java
+/mnt/d/Projects/sop/audit-service/src/main/java/edu/rutmiit/demo/auditservice/model/AuditEntry.java
+/mnt/d/Projects/sop/audit-service/src/main/java/edu/rutmiit/demo/auditservice/storage/AuditStorage.java

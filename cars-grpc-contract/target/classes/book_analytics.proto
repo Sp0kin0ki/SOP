@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+option java_package = "edu.rutmiit.demo.grpc";
+option java_multiple_files = true;
+
+package carmetadata;
+
+service CarMetadataService {
+
+    // Возвращает дополнительные характеристики автомобиля.
+    rpc ResolveSpecifications (ResolveSpecificationsRequest) returns (ResolveSpecificationsResponse);
+}
+
+message ResolveSpecificationsRequest {
+
+    int64 car_id = 1;
+
+    string brand = 2;
+
+    string model = 3;
+
+    int32 year = 4;
+}
+
+message ResolveSpecificationsResponse {
+
+    int64 car_id = 1;
+
+    // Тип двигателя
+    string engine = 2;
+
+    // Мощность
+    int32 horsepower = 3;
+
+    // Тип кузова
+    string body_type = 4;
+
+    // Тип коробки
+    string transmission = 5;
+
+    // Тип привода
+    string drivetrain = 6;
+
+    // Дополнительные metadata
+    map<string, string> specifications = 7;
+}

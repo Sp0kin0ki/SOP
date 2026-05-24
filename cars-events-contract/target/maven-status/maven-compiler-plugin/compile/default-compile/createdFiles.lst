@@ -1,0 +1,14 @@
+edu/rutmiit/demo/events/DealerEvent$Created.class
+edu/rutmiit/demo/events/CarEvent.class
+edu/rutmiit/demo/events/RoutingKeys.class
+edu/rutmiit/demo/events/CarEvent$Deleted.class
+edu/rutmiit/demo/events/DealerEvent$Updated.class
+edu/rutmiit/demo/events/DealerEvent.class
+edu/rutmiit/demo/events/CarEvent$Enriched.class
+edu/rutmiit/demo/events/CarEvent$PriceChanged.class
+edu/rutmiit/demo/events/CarEvent$Assigned.class
+edu/rutmiit/demo/events/EventEnvelope.class
+edu/rutmiit/demo/events/CarEvent$Created.class
+edu/rutmiit/demo/events/CarEvent$Updated.class
+edu/rutmiit/demo/events/DealerEvent$Deleted.class
+edu/rutmiit/demo/events/EventMetadata.class

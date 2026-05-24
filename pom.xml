@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!-- 
+            # Собрать всё в правильном порядке
+            .\mvnw install
+
+            # Запустить demo-rest - контракт соберётся автоматически
+            .\mvnw spring-boot:run -pl demo-rest -am
+
+            # Собрать только контракт (если менял только его)
+            .\mvnw install -pl books-api-contract
+        -->
+    <groupId>edu.rutmiit.demo</groupId>
+    <artifactId>demo-rest-root</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+    <name>demo-rest [root aggregator]</name>
+
+    <modules>
+        <module>dealer-api-contract</module>
+        <module>cars-events-contract</module>
+        <module>cars-grpc-contract</module>
+
+        <module>rest</module>
+        <module>audit-service</module>
+        <module>grpc-enrichment-server</module>
+        <module>grpc-enrichment-client</module>
+    </modules>
+
+</project>
