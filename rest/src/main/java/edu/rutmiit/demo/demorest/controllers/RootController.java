@@ -19,7 +19,7 @@ public class RootController {
                 linkTo(methodOn(CarController.class)
                         .getAllCars(null, null, null, null, null, null, 0, 20))
                         .withRel("cars"),
-                linkTo(methodOn(DealerController.class).getAllDealers(null, 0, 20)).withRel("books")
+                linkTo(methodOn(DealerController.class).getAllDealers(null, 0, 20)).withRel("dealers")
         );
         return rootModel;
     }
