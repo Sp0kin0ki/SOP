@@ -41,7 +41,7 @@
         <!-- Контракт доменных событий — общий между publisher и consumer -->
         <dependency>
             <groupId>edu.rutmiit.demo</groupId>
-            <artifactId>books-events-contract</artifactId>
+            <artifactId>cars-events-contract</artifactId>
             <version>1.0</version>
         </dependency>
 

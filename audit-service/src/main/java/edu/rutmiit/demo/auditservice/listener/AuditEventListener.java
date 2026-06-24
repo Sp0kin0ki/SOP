@@ -147,6 +147,18 @@ public class AuditEventListener {
                         e.newDealerId()
                 );
             }
+            case "car.enriched" -> {
+                CarEvent.Enriched e =
+                        jsonMapper.treeToValue(payloadNode, CarEvent.Enriched.class);
+
+                yield String.format(
+                        "Автомобиль id=%d дополнен характеристиками: %s, %d л.с., %s",
+                        e.carId(),
+                        e.engine(),
+                        e.horsepower(),
+                        e.transmission()
+                );
+                }
 
             case "dealer.created" -> {
                 DealerEvent.Created e =

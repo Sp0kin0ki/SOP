@@ -95,10 +95,10 @@ public class EventNotificationListener {
 
     private String buildTitle(String eventType) {
         return switch (eventType) {
-            case "cars.created"   -> "Новая машина";
-            case "cars.updated"   -> "Машина обновлена";
-            case "cars.deleted"   -> "Машина удалена";
-            case "cars.enriched"  -> "Дополнение машины характеристиками";
+            case "car.created"   -> "Новая машина";
+            case "car.updated"   -> "Машина обновлена";
+            case "car.deleted"   -> "Машина удалена";
+            case "car.enriched"  -> "Дополнение машины характеристиками";
             case "dealer.created" -> "Новый дилер";
             case "dealer.deleted" -> "Дилер удалён";
             default               -> "Событие: " + eventType;

@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * HTTP-порт (8083) используется для actuator/health endpoints.
  *
  * Запуск:
- *   mvnw spring-boot:run -pl grpc-analytics-server
+ *   mvnw spring-boot:run -pl grpc-enrichment-server
  */
 @SpringBootApplication
 public class GrpcAnalyticsServerApplication {
